@@ -1,62 +1,38 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Vite + NextUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "Playbook",
+  description: "Invest Smarter, Close Faster",
   navItems: [
     {
       label: "Home",
       href: "/",
     },
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Solutions",
+      href: "#solutions",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
+      label: "Get Started",
+      href: "#get-started",
     },
     {
-      label: "Blog",
-      href: "/blog",
-    },
-    {
-      label: "About",
-      href: "/about",
+      label: "Team",
+      href: "#team",
     },
   ],
   navMenuItems: [
     {
-      label: "Profile",
-      href: "/profile",
+      label: "Solutions",
+      href: "#solutions",
     },
     {
-      label: "Dashboard",
-      href: "/dashboard",
-    },
-    {
-      label: "Projects",
-      href: "/projects",
+      label: "Get Started",
+      href: "#get-started",
     },
     {
       label: "Team",
-      href: "/team",
-    },
-    {
-      label: "Calendar",
-      href: "/calendar",
-    },
-    {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
+      href: "#team",
     },
   ],
   links: {
@@ -65,5 +41,6 @@ export const siteConfig = {
     docs: "https://nextui-docs-v2.vercel.app",
     discord: "https://discord.gg/9b6yyZKmH4",
     sponsor: "https://patreon.com/jrgarciadev",
+    microsoft: "https://pages.store.office.com/addinsinstallpage.aspx?assetid=WA200006471&rs=en-US&correlationId=d8f7dba7-a15e-6a06-5a25-def6affcd3ec",
   },
 };

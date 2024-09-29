@@ -26,6 +26,7 @@
     }
   },
   "rules": {
+    "avoidEscape": true,
     "no-console": "warn",
     "react/prop-types": "off",
     "react/jsx-uses-react": "off",
