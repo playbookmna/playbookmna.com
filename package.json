@@ -11,6 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@nextui-org/react": "latest",
     "@nextui-org/button": "2.0.38",
     "@nextui-org/code": "2.0.33",
     "@nextui-org/input": "2.2.5",
