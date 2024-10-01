@@ -13,16 +13,19 @@ export default function DefaultLayout({
       <main className="container mx-auto max-w-7xl px-6 flex-grow pt-16">
         {children}
       </main>
-      <footer className="w-full flex items-center justify-center py-3">
-        <Link
-          isExternal
-          className="flex items-center gap-1 text-current"
-          href="https://nextui-docs-v2.vercel.app?utm_source=next-pages-template"
-          title="nextui.org homepage"
-        >
-          <span className="text-default-600">Powered by</span>
-          <p className="text-primary">NextUI</p>
-        </Link>
+      <footer className='w-full flex flex-col items-center py-3 bg-black'>
+        <img src='/playbook_logos/playbook_logo.svg' alt='playbook-logo' className='mt-4' />
+        <div className='flex mt-5 mb-4 gap-4'>
+          <span className='text-default-600'>© 2024 Playbook M, Inc.</span>
+          <Link
+            isExternal
+            className='flex items-center gap-1 text-current'
+            href='https://www.playbookmna.com/privacy-policy'
+            title='playbook-privacy-policy'
+            >
+            <p className='text-primary'>Privacy Policy</p>
+          </Link>
+        </div>
       </footer>
     </div>
   );

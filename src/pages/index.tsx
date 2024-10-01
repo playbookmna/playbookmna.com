@@ -2,6 +2,7 @@ import { Link } from "@nextui-org/link";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
+import { Card, CardBody, Image } from "@nextui-org/react";
 
 export default function IndexPage() {
   return (
@@ -18,25 +19,85 @@ export default function IndexPage() {
           </div>
         </div>
         <div className='flex gap-3'>
-          <img src='/dropdown.gif' alt='excel-plugin-dropdown' />
+          <Image src='/app/dropdown.gif' alt='excel-plugin-dropdown' />
         </div>
         <div className='flex gap-3 mt-4'>
           <Link
             isExternal
             href={siteConfig.links.microsoft}
           >
-            <img src='/msft-download-button.png' alt='microsoft-store-button' width='175px' />
+            <Image src='/app/msft_download_button.png' alt='microsoft-store-button' width='175px' radius='none' />
           </Link>
         </div>
       </section>
 
       <section className='flex flex-col items-center justify-center gap-4 py-8 md:py-10'>
         <span className='text-lg font-semibold'>TRUSTED BY INVESTORS FROM</span>
+        <div className='flex gap-4 mt-8'>
+          <Card
+            isBlurred
+            className='border-none bg-background/60 dark:bg-default-100/50 max-w-[610px]'
+            shadow='sm'
+          >
+            <CardBody className='justify-center'>
+              <Image src='/company_logos/nep_logo.png' alt='nep-company-logo' width='150px' />
+            </CardBody>
+          </Card>
+          <Card
+            isBlurred
+            className='border-none bg-background/60 dark:bg-default-100/50 max-w-[610px]'
+            shadow='sm'
+          >
+            <CardBody className='justify-center'>
+              <Image src='/company_logos/barclays_logo.png' alt='barclays-company-logo' width='150px' />
+            </CardBody>
+          </Card>
+        </div>
+        <div className='flex gap-4'>
+          <Card
+            isBlurred
+            className='border-none bg-background/60 dark:bg-default-100/50 max-w-[610px]'
+            shadow='sm'
+          >
+            <CardBody className='justify-center'>
+              <Image src='/company_logos/stg_logo.png' alt='stg-company-logo' width='150px' />
+            </CardBody>
+          </Card>
+          <Card
+            isBlurred
+            className='border-none bg-background/60 dark:bg-default-100/50 max-w-[610px]'
+            shadow='sm'
+          >
+            <CardBody className='justify-center'>
+              <Image src='/company_logos/structural_capital_logo.png' alt='structural-capital-company-logo' width='150px' />
+            </CardBody>
+          </Card>
+        </div>
+        <div className='flex gap-4'>
+          <Card
+            isBlurred
+            className='border-none bg-background/60 dark:bg-default-100/50 max-w-[610px]'
+            shadow='sm'
+          >
+            <CardBody className='justify-center'>
+              <Image src='/company_logos/carrick_logo.png' alt='carrick-company-logo' width='150px' />
+            </CardBody>
+          </Card>
+          <Card
+            isBlurred
+            className='border-none bg-background/60 dark:bg-default-100/50 max-w-[610px]'
+            shadow='sm'
+          >
+            <CardBody className='justify-center'>
+              <Image src='/company_logos/lazard_logo.jpeg' alt='lazard-company-logo' width='150px' />
+            </CardBody>
+          </Card>
+        </div>
       </section>
 
       <section className='flex flex-col items-center justify-center py-8 md:py-10'>
         <span className='text-lg font-semibold'>SOLUTIONS</span>
-          <span className={title({ color: 'blue' })} style={{ fontSize: '16px', marginTop: '32px' }}>90% FASTER MODELING</span>
+          <span className={`${title({ color: 'blue' })} mt-8 text-base`}>90% FASTER MODELING</span>
           <span className='text-2xl font-light text-center'>Automate transaction modeling with real-time scenarios analysis</span>
           <span className='text-md text-center mt-4'>
             Playbook&#39;s advanced formulas effortlessly handle complex cap table math, waterfall proceeds, MOIC, and
@@ -44,10 +105,10 @@ export default function IndexPage() {
             and efficiently update existing valuation models each quarter as cap tables change.
           </span>
           <div className='flex gap-3 mt-4'>
-            <img src='/formula.gif' alt='excel-plugin-formula' />
+            <Image src='/app/formula.gif' alt='excel-plugin-formula' />
           </div>
 
-          <span className={title({ color: 'blue' })} style={{ fontSize: '16px', marginTop: '64px' }}>100% ACCURATE AND AUDITABLE</span>
+          <span className={`${title({ color: 'blue' })} mt-16 text-base`}>100% ACCURATE AND AUDITABLE</span>
           <span className='text-2xl font-light text-center'>Verify your existing models for accuracy</span>
           <span className='text-md text-center mt-4'>
             Remove cap table calculation errors to get to the correct answer, the first time. Make better decisions by
@@ -55,10 +116,10 @@ export default function IndexPage() {
             transaction structures directly within Excel.
           </span>
           <div className='flex gap-3 mt-4'>
-            <img src='/audit.gif' alt='excel-plugin-audit' />
+            <Image src='/app/audit.gif' alt='excel-plugin-audit' />
           </div>
 
-          <span className={title({ color: 'blue' })} style={{ fontSize: '16px', marginTop: '64px', textAlign: 'center' }}>EXCEL-FIRST DESIGN, NO LEARNING CURVE</span>
+          <span className={`${title({ color: 'blue' })} mt-16 text-base`}>EXCEL-FIRST DESIGN, NO LEARNING CURVE</span>
           <span className='text-2xl font-light text-center'>Use Excel templates powered by our formulas</span>
           <span className='text-md text-center mt-4'>
             Playbook has been built from the ground up to support your workflows directly within Excel with no learning curve.
@@ -66,26 +127,26 @@ export default function IndexPage() {
             you can focus more time on sourcing and evaluating more deals.
           </span>
           <div className='flex flex-col gap-3 mt-4'>
-            <img src='/template-mock-returns-output.png' alt='excel-template-returns-output' />
-            <img src='/template-mock-pwerm.png' alt='excel-template-pwerm' />
+            <Image src='/app/template_mock_returns_output.png' alt='excel-template-returns-output' />
+            <Image src='/app/template_mock_pwerm.png' alt='excel-template-pwerm' />
           </div>
       </section>
 
       <section className='flex flex-col items-center justify-center gap-4 py-8 md:py-10'>
         <span className='text-lg font-semibold'>GET STARTED</span>
-        <div className='flex gap-3 mt-4'>
+        <div className='flex gap-3 mt-8'>
           <Link
             isExternal
             href={siteConfig.links.microsoft}
           >
-            <img src='/msft-download-button.png' alt='microsoft-store-button' width='175px' />
+            <Image src='/app/msft_download_button.png' alt='microsoft-store-button' width='175px' radius='none' />
           </Link>
         </div>
       </section>
 
       <section className='flex flex-col items-center justify-center py-8 md:py-10'>
         <span className='text-lg font-semibold'>TEAM</span>
-        <img src='/rachit.jpeg' alt='rachit-profile-picture' className='mt-8' style={{ width: '250px', borderRadius: '100%' }} />
+        <Image src='/people/rachit.jpeg' alt='rachit-profile-picture' className='mt-8' style={{ width: '250px', borderRadius: '100%' }} />
         <span className='text-2xl mt-4'>Rachit Joshi</span>
         <span className='text-lg'>CEO & Co-Founder</span>
         <span className='text-sm mt-2 text-center'>
@@ -94,7 +155,7 @@ export default function IndexPage() {
           in Finance, and Masters in Accounting from University of Illinois.
         </span>
 
-        <img src='/anand.png' alt='anand-profile-picture' className='mt-12' style={{ width: '250px', borderRadius: '100%' }} />
+        <Image src='/people/anand.png' alt='anand-profile-picture' className='mt-12' style={{ width: '250px', borderRadius: '100%' }} />
         <span className='text-2xl mt-4'>Anand Patel</span>
         <span className='text-lg'>CTO & Co-Founder</span>
         <span className='text-sm mt-2 text-center'>
@@ -103,7 +164,7 @@ export default function IndexPage() {
           Computer Engineering from Georgia Institute of Technology.
         </span>
 
-        <img src='/neil.jpeg' alt='neil-profile-picture' className='mt-12' style={{ width: '250px', borderRadius: '100%' }} />
+        <Image src='/people/neil.jpeg' alt='neil-profile-picture' className='mt-12' style={{ width: '250px', borderRadius: '100%' }} />
         <span className='text-2xl mt-4'>Neil Mithipati</span>
         <span className='text-lg'>CPO & Co-Founder</span>
         <span className='text-sm mt-2 text-center'>

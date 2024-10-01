@@ -23,7 +23,7 @@ export const Navbar = () => {
             color="foreground"
             href="/"
           >
-            <img src='/playbook_logo_white.svg' alt='logo' />
+            <img src='/playbook_logos/playbook_logo_black.svg' alt='logo' />
           </Link>
         </NavbarBrand>
         <div className="hidden lg:flex gap-4 justify-start ml-2">
