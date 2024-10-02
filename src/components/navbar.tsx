@@ -16,6 +16,7 @@ import { ThemeSwitch } from "@/components/theme-switch";
 export const Navbar = () => {
   return (
     <NextUINavbar maxWidth="xl" position="sticky">
+      {/* always show logo */}
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand className="gap-3 max-w-fit">
           <Link
@@ -26,7 +27,9 @@ export const Navbar = () => {
             <img src='/playbook_logos/playbook_logo_black.svg' alt='logo' />
           </Link>
         </NavbarBrand>
-        <div className="hidden lg:flex gap-4 justify-start ml-2">
+
+        {/* desktop display, show navbar items */}
+        <div className="hidden sm:flex gap-4 justify-start ml-2">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
               <Link
@@ -44,6 +47,7 @@ export const Navbar = () => {
         </div>
       </NavbarContent>
 
+      {/* desktop display, show only dark mode toggle */}
       <NavbarContent
         className="hidden sm:flex basis-1/5 sm:basis-full"
         justify="end"
@@ -53,6 +57,7 @@ export const Navbar = () => {
         </NavbarItem>
       </NavbarContent>
 
+      {/* mobile display, show hamburger menu */}
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
         <ThemeSwitch />
         <NavbarMenuToggle />

@@ -1,5 +1,4 @@
-import { Link } from "@nextui-org/link";
-
+import { Link } from "@nextui-org/react";
 import { Navbar } from "@/components/navbar";
 
 export default function DefaultLayout({
@@ -10,12 +9,11 @@ export default function DefaultLayout({
   return (
     <div className="relative flex flex-col h-screen">
       <Navbar />
-      <main className="container mx-auto max-w-7xl px-6 flex-grow pt-16">
+      <main className="container mx-auto max-w-7xl px-6 sm:px-16 flex-grow pt-16">
         {children}
       </main>
-      <footer className='w-full flex flex-col items-center py-3 bg-black'>
-        <img src='/playbook_logos/playbook_logo.svg' alt='playbook-logo' className='mt-4' />
-        <div className='flex mt-5 mb-4 gap-4'>
+      <footer className='w-full flex flex-col py-4 px-6 sm:px-16 bg-black'>
+        <div className='flex my-4 gap-4 justify-between'>
           <span className='text-default-600'>© 2024 Playbook M, Inc.</span>
           <Link
             isExternal
