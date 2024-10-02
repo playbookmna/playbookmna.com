@@ -120,7 +120,7 @@ export default function IndexPage() {
 
         <section className='flex flex-col items-center justify-center mt-12 sm:flex-row sm:text-left'>
           <div className='flex flex-col sm:mr-8'>
-          `  <span className={title({ color: 'blue', class: 'text-base lg:text-base' })}>100% ACCURATE AND AUDITABLE</span>
+            <span className={title({ color: 'blue', class: 'text-base lg:text-base' })}>100% ACCURATE AND AUDITABLE</span>
             <span className='text-2xl font-light'>Verify your existing models for accuracy</span>
             <span className='text-md mt-4'>
               Remove cap table calculation errors to get to the correct answer, the first time. Make better decisions by

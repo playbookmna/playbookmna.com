@@ -24,7 +24,8 @@ export const Navbar = () => {
             className='flex justify-start'
             href='/'
           >
-            <img src='/playbook_logos/playbook_logo_black.svg' alt='logo' />
+            <img src='/playbook_logos/playbook_logo_black.svg' alt='logo' className='dark:hidden' />
+            <img src='/playbook_logos/playbook_logo_white.svg' alt='logo' className='hidden dark:block' />
           </Link>
         </NavbarBrand>
 
