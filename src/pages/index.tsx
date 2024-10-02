@@ -27,6 +27,7 @@ export default function IndexPage() {
             >
             <Image src='/app/msft_download_button.png' alt='microsoft-store-button' width='175px' radius='none' />
           </Link>
+          <a href="#team">Team</a>
         </div>
         <div className='flex flex-col justify-center mt-4 sm:mt-0'>
           <Image src='/app/dropdown.gif' alt='excel-plugin-dropdown' />
@@ -98,9 +99,10 @@ export default function IndexPage() {
             </CardBody>
           </Card>
         </div>
+        <a id='solutions'></a>
       </section>
 
-      <section id='solutions' className='py-8 text-center'>
+      <section className='py-8 text-center'>
         <span className='text-lg font-semibold'>SOLUTIONS</span>
         <section className='flex flex-col items-center justify-center mt-12 sm:mt-12 sm:flex-row sm:text-left'>
           <div className='flex flex-col sm:mr-8'>
@@ -147,9 +149,10 @@ export default function IndexPage() {
             <Image src='/app/template_mock_pwerm.png' alt='excel-template-pwerm' />
           </div>
         </section>
+        <a id='get-started'></a>
       </section>
 
-      <section id='get-started' className='flex flex-col items-center justify-center gap-4 py-8'>
+      <section className='flex flex-col items-center justify-center gap-4 py-8'>
         <span className='text-lg font-semibold'>GET STARTED</span>
         <div className='flex gap-3 mt-8 sm:mt-12'>
           <Link
@@ -159,6 +162,7 @@ export default function IndexPage() {
             <Image src='/app/msft_download_button.png' alt='microsoft-store-button' width='175px' radius='none' />
           </Link>
         </div>
+        <a id='team'></a>
       </section>
 
       <section id='team' className='pt-8 pb-16 text-center'>

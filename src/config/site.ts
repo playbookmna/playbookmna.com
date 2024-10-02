@@ -6,7 +6,7 @@ export const siteConfig = {
   navItems: [
     {
       label: "Solutions",
-      href: "/#solutions",
+      href: "#solutions",
     },
     {
       label: "Get Started",
@@ -20,7 +20,7 @@ export const siteConfig = {
   navMenuItems: [
     {
       label: "Solutions",
-      href: "/#solutions",
+      href: "#solutions",
     },
     {
       label: "Get Started",
