@@ -8,9 +8,9 @@ import {
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
-} from "@nextui-org/navbar";
-import { siteConfig } from "@/config/site";
-import { ThemeSwitch } from "@/components/theme-switch";
+} from '@nextui-org/navbar';
+import { siteConfig } from '@/config/site';
+import { ThemeSwitch } from '@/components/theme-switch';
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)

@@ -1,8 +1,8 @@
-import { Link } from "@nextui-org/link";
-import { siteConfig } from "@/config/site";
-import { title, subtitle } from "@/components/primitives";
-import DefaultLayout from "@/layouts/default";
-import { Card, CardBody, Image } from "@nextui-org/react";
+import { Link } from '@nextui-org/link';
+import { siteConfig } from '@/config/site';
+import { title, subtitle } from '@/components/primitives';
+import DefaultLayout from '@/layouts/default';
+import { Card, CardBody, Image } from '@nextui-org/react';
 
 export default function IndexPage() {
   return (
@@ -27,7 +27,6 @@ export default function IndexPage() {
             >
             <Image src='/app/msft_download_button.png' alt='microsoft-store-button' width='175px' radius='none' />
           </Link>
-          <a href="#team">Team</a>
         </div>
         <div className='flex flex-col justify-center mt-4 sm:mt-0'>
           <Image src='/app/dropdown.gif' alt='excel-plugin-dropdown' />
