@@ -14,14 +14,18 @@ export default function DefaultLayout({
       </main>
       <footer className='w-full flex flex-col py-4 px-6 sm:px-16 bg-black'>
         <div className='flex my-4 gap-4 justify-between'>
-          <span className='text-default-600'>© 2024 Playbook M, Inc.</span>
+          <p className='text-sm text-default-600'>
+            <p className='text-sm text-default-600 hidden sm:inline'>Copyright </p>
+            © 2024 Playbook M, Inc.
+            <p className='text-sm text-default-600 hidden sm:inline'> All rights reserved.</p>
+          </p>
           <Link
             isExternal
             className='flex items-center gap-1 text-current'
             href='/privacy-policy'
             title='playbook-privacy-policy'
             >
-            <p className='text-primary'>Privacy Policy</p>
+            <p className='text-sm text-primary'>Privacy Policy</p>
           </Link>
         </div>
       </footer>

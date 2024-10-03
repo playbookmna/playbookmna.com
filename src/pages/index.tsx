@@ -105,7 +105,7 @@ export default function IndexPage() {
         <span className='text-lg font-semibold'>SOLUTIONS</span>
         <section className='flex flex-col items-center justify-center mt-12 sm:mt-12 sm:flex-row sm:text-left'>
           <div className='flex flex-col sm:mr-8'>
-            <span className={title({ color: 'blue', class: 'text-base lg:text-base' })}>90% FASTER MODELING</span>
+            <span className={title({ color: 'blue', class: 'text-xl lg:text-2xl' })}>90% FASTER MODELING</span>
             <span className='text-2xl font-light'>Automate transaction modeling with real-time scenarios analysis</span>
             <span className='text-md mt-4'>
               Playbook&#39;s advanced formulas effortlessly handle complex cap table math, waterfall proceeds, MOIC, and
@@ -120,7 +120,7 @@ export default function IndexPage() {
 
         <section className='flex flex-col items-center justify-center mt-12 sm:flex-row sm:text-left'>
           <div className='flex flex-col sm:mr-8'>
-            <span className={title({ color: 'blue', class: 'text-base lg:text-base' })}>100% ACCURATE AND AUDITABLE</span>
+            <span className={title({ color: 'blue', class: 'text-xl lg:text-2xl' })}>100% ACCURATE AND AUDITABLE</span>
             <span className='text-2xl font-light'>Verify your existing models for accuracy</span>
             <span className='text-md mt-4'>
               Remove cap table calculation errors to get to the correct answer, the first time. Make better decisions by
@@ -135,7 +135,7 @@ export default function IndexPage() {
 
         <section className='flex flex-col items-center justify-center mt-12 sm:flex-row sm:text-left sm:items-start'>
           <div className='flex flex-col sm:mr-8'>
-            <span className={title({ color: 'blue', class: 'text-base lg:text-base' })}>EXCEL-FIRST DESIGN, NO LEARNING CURVE</span>
+            <span className={title({ color: 'blue', class: 'text-xl lg:text-2xl' })}>EXCEL-FIRST DESIGN, PLUG & PLAY</span>
             <span className='text-2xl font-light'>Use Excel templates powered by our formulas</span>
             <span className='text-md mt-4'>
               Playbook has been built from the ground up to support your workflows directly within Excel with no learning curve.
@@ -167,7 +167,7 @@ export default function IndexPage() {
       <section id='team' className='pt-8 pb-16 text-center'>
         <span className='text-lg font-semibold'>TEAM</span>
         <div className='flex flex-wrap'>
-        <div className='flex flex-col items-center mt-12 sm:basis-1/3'>
+        <div className='flex flex-col items-center mt-12 px-4 sm:basis-1/3'>
           <Image src='/people/rachit.jpeg' alt='rachit-profile-picture' style={{ width: '250px', borderRadius: '100%' }} />
           <span className='text-2xl mt-4'>Rachit Joshi</span>
           <span className='text-lg'>CEO & Co-Founder</span>
@@ -178,7 +178,7 @@ export default function IndexPage() {
           </span>
         </div>
 
-        <div className='flex flex-col items-center mt-12 sm:basis-1/3'>
+        <div className='flex flex-col items-center mt-12 px-4 sm:basis-1/3'>
           <Image src='/people/anand.png' alt='anand-profile-picture' style={{ width: '250px', borderRadius: '100%' }} />
           <span className='text-2xl mt-4'>Anand Patel</span>
           <span className='text-lg'>CTO & Co-Founder</span>
@@ -189,7 +189,7 @@ export default function IndexPage() {
           </span>
         </div>
 
-        <div className='flex flex-col items-center mt-12 sm:basis-1/3'>
+        <div className='flex flex-col items-center mt-12 px-4 sm:basis-1/3'>
           <Image src='/people/neil.jpeg' alt='neil-profile-picture' style={{ width: '250px', borderRadius: '100%' }} />
           <span className='text-2xl mt-4'>Neil Mithipati</span>
           <span className='text-lg'>CPO & Co-Founder</span>
