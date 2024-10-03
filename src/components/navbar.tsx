@@ -33,7 +33,7 @@ export const Navbar = () => {
 
         {/* desktop display, show navbar items */}
         {
-          !location.pathname.includes('privacy-policy') &&
+          !location.hash.includes('privacy-policy') &&
           <div className='hidden sm:flex gap-4 justify-start ml-2'>
             {siteConfig.navItems.map((item) => (
               <NavbarItem key={item.href}>
@@ -48,7 +48,7 @@ export const Navbar = () => {
 
       {/* desktop display, show only dark mode toggle */}
       {
-        !location.pathname.includes('privacy-policy') &&
+        !location.hash.includes('privacy-policy') &&
         <>
           <NavbarContent
             className='hidden sm:flex basis-1/5 sm:basis-full'
