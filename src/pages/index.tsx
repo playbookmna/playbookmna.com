@@ -7,7 +7,7 @@ import { Card, CardBody, Image } from '@nextui-org/react';
 export default function IndexPage() {
   return (
     <DefaultLayout>
-      <section className='flex flex-col items-center justify-center py-8 sm:flex-row'>
+      <section className='flex flex-col items-center justify-center pb-8 sm:flex-row'>
         <div className='flex flex-col gap-2 text-center sm:mr-16 sm:text-left'>
           <div>
             <span className={title()}>Invest&nbsp;</span>

@@ -18,7 +18,7 @@ export default function DefaultLayout({
           <Link
             isExternal
             className='flex items-center gap-1 text-current'
-            href='https://www.playbookmna.com/privacy-policy'
+            href='/privacy-policy'
             title='playbook-privacy-policy'
             >
             <p className='text-primary'>Privacy Policy</p>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import { Link } from "@nextui-org/link";
 import {
   Navbar as NextUINavbar,
@@ -13,6 +14,7 @@ import { siteConfig } from '@/config/site';
 import { ThemeSwitch } from '@/components/theme-switch';
 
 export const Navbar = () => {
+  const location = useLocation()
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)
 
   return (
@@ -30,47 +32,55 @@ export const Navbar = () => {
         </NavbarBrand>
 
         {/* desktop display, show navbar items */}
-        <div className='hidden sm:flex gap-4 justify-start ml-2'>
-          {siteConfig.navItems.map((item) => (
-            <NavbarItem key={item.href}>
-              <a href={item.href}>
-                {item.label}
-              </a>
-            </NavbarItem>
-          ))}
-        </div>
+        {
+          !location.pathname.includes('privacy-policy') &&
+          <div className='hidden sm:flex gap-4 justify-start ml-2'>
+            {siteConfig.navItems.map((item) => (
+              <NavbarItem key={item.href}>
+                <a href={item.href}>
+                  {item.label}
+                </a>
+              </NavbarItem>
+            ))}
+          </div>
+        }
       </NavbarContent>
 
       {/* desktop display, show only dark mode toggle */}
-      <NavbarContent
-        className='hidden sm:flex basis-1/5 sm:basis-full'
-        justify='end'
-      >
-        <NavbarItem className='hidden sm:flex gap-2'>
-          <ThemeSwitch />
-        </NavbarItem>
-      </NavbarContent>
+      {
+        !location.pathname.includes('privacy-policy') &&
+        <>
+          <NavbarContent
+            className='hidden sm:flex basis-1/5 sm:basis-full'
+            justify='end'
+            >
+            <NavbarItem className='hidden sm:flex gap-2'>
+              <ThemeSwitch />
+            </NavbarItem>
+          </NavbarContent>
 
-      {/* mobile display, show hamburger menu */}
-      <NavbarContent className='sm:hidden basis-1 pl-4' justify='end'>
-        <ThemeSwitch />
-        <NavbarMenuToggle />
-      </NavbarContent>
+          {/* mobile display, show hamburger menu */}
+          <NavbarContent className='sm:hidden basis-1 pl-4' justify='end'>
+            <ThemeSwitch />
+            <NavbarMenuToggle />
+          </NavbarContent>
 
-      <NavbarMenu>
-        <div className='mx-4 mt-2 flex flex-col gap-2'>
-          {siteConfig.navMenuItems.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`}>
-              <a
-                href={item.href}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item.label}
-              </a>
-            </NavbarMenuItem>
-          ))}
-        </div>
-      </NavbarMenu>
+          <NavbarMenu>
+            <div className='mx-4 mt-2 flex flex-col gap-2'>
+              {siteConfig.navMenuItems.map((item, index) => (
+                <NavbarMenuItem key={`${item}-${index}`}>
+                  <a
+                    href={item.href}
+                    onClick={() => setIsMenuOpen(false)}
+                    >
+                    {item.label}
+                  </a>
+                </NavbarMenuItem>
+              ))}
+            </div>
+          </NavbarMenu>
+        </>
+      }
     </NextUINavbar>
   );
 };
