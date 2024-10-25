@@ -26,8 +26,8 @@ export const Navbar = () => {
             className='flex justify-start'
             href='/'
           >
-            <img src='/playbook_logos/playbook_logo_black.svg' alt='logo' className='dark:hidden' />
-            <img src='/playbook_logos/playbook_logo_white.svg' alt='logo' className='hidden dark:block' />
+            <img src='/playbook_logos/playbook_logo_black.svg' alt='logo' className='dark:hidden' style={{ minWidth: '8rem' }} />
+            <img src='/playbook_logos/playbook_logo_white.svg' alt='logo' className='hidden dark:block' style={{ minWidth: '8rem' }} />
           </Link>
         </NavbarBrand>
 
@@ -35,7 +35,7 @@ export const Navbar = () => {
         {
           !location.hash.includes('privacy-policy') &&
           <div className='hidden sm:flex gap-4 justify-start ml-2'>
-            {siteConfig.navItems.map((item) => (
+            {siteConfig.navItems.filter((item) => item.label !== 'For Employees').map((item) => (
               <NavbarItem key={item.href}>
                 <a href={item.href}>
                   {item.label}
@@ -54,6 +54,13 @@ export const Navbar = () => {
             className='hidden sm:flex basis-1/5 sm:basis-full'
             justify='end'
             >
+            {siteConfig.navItems.filter((item) => item.label === 'For Employees').map((item) => (
+              <NavbarItem key={item.href}>
+                <a href={item.href}>
+                  {item.label}
+                </a>
+              </NavbarItem>
+            ))}
             <NavbarItem className='hidden sm:flex gap-2'>
               <ThemeSwitch />
             </NavbarItem>

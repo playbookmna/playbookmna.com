@@ -16,6 +16,10 @@ export const siteConfig = {
       label: 'Team',
       href: '#team',
     },
+    {
+      label: 'For Employees',
+      href: 'https://app.playbookmna.com/equity-calculator',
+    },
   ],
   navMenuItems: [
     {
@@ -29,6 +33,10 @@ export const siteConfig = {
     {
       label: 'Team',
       href: '#team',
+    },
+    {
+      label: 'For Employees',
+      href: 'https://app.playbookmna.com/equity-calculator',
     },
   ],
   links: {
