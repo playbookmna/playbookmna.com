@@ -18,7 +18,7 @@ export default function IndexPage() {
             <span className={title({ color: 'blue' })}>Faster&nbsp;</span>
           </div>
           <div className={subtitle({ class: 'my-0' })}>
-            Explore the world&#39;s leading transaction structuring software for investors
+            The all-in-one deal execution platform for Venture Capitalists
           </div>
           <Link
             isExternal
@@ -105,12 +105,12 @@ export default function IndexPage() {
         <span className='text-lg font-semibold'>SOLUTIONS</span>
         <section className='flex flex-col items-center justify-center mt-12 sm:mt-12 sm:flex-row sm:text-left'>
           <div className='flex flex-col sm:mr-8'>
-            <span className={title({ color: 'blue', class: 'text-xl lg:text-2xl' })}>90% FASTER MODELING</span>
-            <span className='text-2xl font-light'>Automate transaction modeling with real-time scenarios analysis</span>
+            <span className={title({ color: 'blue', class: 'text-xl lg:text-2xl' })}>10x+ Faster Modeling</span>
+            <span className='text-2xl font-light'>Automate modeling, metrics analysis, and data logging, reducing workflows from days to minutes</span>
             <span className='text-md mt-4'>
-              Playbook&#39;s advanced formulas effortlessly handle complex cap table math, waterfall proceeds, MOIC, and
-              IRR for various securities within seconds. Compare multiple transaction scenarios with ease for new investments
-              and efficiently update existing valuation models each quarter as cap tables change.
+              Playbook&#39;s cap table modeling delivers faster, more precise transaction structuring for VCs.
+              Import a cap table, in any format and level of complexity, and use our advanced formulas to model scenarios, link financial data, and
+              build institutional memory over time—even for deals that don't close.
             </span>
           </div>
           <div className='flex gap-3 mt-4'>
@@ -120,12 +120,12 @@ export default function IndexPage() {
 
         <section className='flex flex-col items-center justify-center mt-12 sm:flex-row sm:text-left'>
           <div className='flex flex-col sm:mr-8'>
-            <span className={title({ color: 'blue', class: 'text-xl lg:text-2xl' })}>100% ACCURATE AND AUDITABLE</span>
-            <span className='text-2xl font-light'>Verify your existing models for accuracy</span>
+            <span className={title({ color: 'blue', class: 'text-xl lg:text-2xl' })}>100% Accuracy</span>
+            <span className='text-2xl font-light'>Eliminate manual errors with consistent, reliable, and instant results</span>
             <span className='text-md mt-4'>
-              Remove cap table calculation errors to get to the correct answer, the first time. Make better decisions by
-              understanding individual shareholder incentives clearly and streamline negotiations by quickly evaluating multiple
-              transaction structures directly within Excel.
+              Playbook&#39;s metrics engine delivers powerful insights, dynamic benchmarking, and institutional memory. Leverage 50+ core metrics and valuation metrics
+              to benchmark across industries, funding stages, and peer groups as well as compare against past deals to identify trends and outliers.
+
             </span>
           </div>
           <div className='flex gap-3 mt-4'>
@@ -135,17 +135,17 @@ export default function IndexPage() {
 
         <section className='flex flex-col items-center justify-center mt-12 sm:flex-row sm:text-left sm:items-start'>
           <div className='flex flex-col sm:mr-8'>
-            <span className={title({ color: 'blue', class: 'text-xl lg:text-2xl' })}>EXCEL-FIRST DESIGN, PLUG & PLAY</span>
-            <span className='text-2xl font-light'>Use Excel templates powered by our formulas</span>
+            <span className={title({ color: 'blue', class: 'text-xl lg:text-2xl' })}>System of Record</span>
+            <span className='text-2xl font-light'>Turn your deal data into your firm&#39;s most valuable asset</span>
             <span className='text-md mt-4'>
-              Playbook has been built from the ground up to support your workflows directly within Excel with no learning curve.
-              Use our formulas or predefined templates to gain an edge on your competition when structuring transactions so that
-              you can focus more time on sourcing and evaluating more deals.
+              Playbook centralizes your deal data in a single, living, secure database, accessible firm-wide. This data can be used
+              to benchmark against new opportunities and track valuation and metric trends across industries, funding rounds, and deal stages. All of which 
+              can be leveraged to improve deal diligence and drive decision-making.
+
             </span>
           </div>
           <div className='flex flex-col gap-3 mt-4'>
-            <Image src='/app/template_mock_returns_output.png' alt='excel-template-returns-output' />
-            <Image src='/app/template_mock_pwerm.png' alt='excel-template-pwerm' />
+            <Image src='/app/metrics_and_benchmarking.png' alt='metrics-and-benchmarking' />
           </div>
         </section>
         <a id='get-started'></a>
