@@ -109,8 +109,8 @@ export default function IndexPage() {
             <span className='text-2xl font-light'>Automate modeling, metrics analysis, and data logging, reducing workflows from days to minutes</span>
             <span className='text-md mt-4'>
               Playbook&#39;s cap table modeling delivers faster, more precise transaction structuring for VCs.
-              Import a cap table, in any format and level of complexity, and use our advanced formulas to model scenarios, link financial data, and
-              build institutional memory over time—even for deals that don't close.
+              Import a cap table, in any format and level of complexity, and use our advanced formulas to model
+              scenarios, link financial data, and build institutional memory over time—even for deals that don't close.
             </span>
           </div>
           <div className='flex gap-3 mt-4'>
@@ -123,8 +123,9 @@ export default function IndexPage() {
             <span className={title({ color: 'blue', class: 'text-xl lg:text-2xl' })}>100% Accuracy</span>
             <span className='text-2xl font-light'>Eliminate manual errors with consistent, reliable, and instant results</span>
             <span className='text-md mt-4'>
-              Playbook&#39;s metrics engine delivers powerful insights, dynamic benchmarking, and institutional memory. Leverage 50+ core metrics and valuation metrics
-              to benchmark across industries, funding stages, and peer groups as well as compare against past deals to identify trends and outliers.
+              Playbook&#39;s metrics engine delivers powerful insights, dynamic benchmarking, and institutional memory.
+              Leverage 50+ core metrics and valuation metrics to benchmark across industries, funding stages, and peer
+              groups as well as compare against past deals to identify trends and outliers.
 
             </span>
           </div>
@@ -138,9 +139,9 @@ export default function IndexPage() {
             <span className={title({ color: 'blue', class: 'text-xl lg:text-2xl' })}>System of Record</span>
             <span className='text-2xl font-light'>Turn your deal data into your firm&#39;s most valuable asset</span>
             <span className='text-md mt-4'>
-              Playbook centralizes your deal data in a single, living, secure database, accessible firm-wide. This data can be used
-              to benchmark against new opportunities and track valuation and metric trends across industries, funding rounds, and deal stages. All of which 
-              can be leveraged to improve deal diligence and drive decision-making.
+              Playbook centralizes your deal data into a single, secure database, accessible firm-wide. This living database is 
+              can be leveraged to benchmark against new opportunities and track valuation and metric trends—improving deal diligence 
+              and driving better decision-making.
 
             </span>
           </div>
