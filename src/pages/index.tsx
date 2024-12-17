@@ -139,8 +139,8 @@ export default function IndexPage() {
             <span className={title({ color: 'blue', class: 'text-xl lg:text-2xl' })}>System of Record</span>
             <span className='text-2xl font-light'>Turn your deal data into your firm&#39;s most valuable asset</span>
             <span className='text-md mt-4'>
-              Playbook centralizes your deal data into a single, secure database, accessible firm-wide. This living database is 
-              can be leveraged to benchmark against new opportunities and track valuation and metric trends—improving deal diligence 
+              Playbook centralizes your deal data into a single, secure database, accessible firm-wide. This living database
+              can be leveraged to benchmark against new opportunities and track valuation and metric trends over time—improving deal diligence 
               and driving better decision-making.
 
             </span>
