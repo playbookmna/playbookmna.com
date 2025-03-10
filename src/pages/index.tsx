@@ -105,12 +105,12 @@ export default function IndexPage() {
         <span className='text-lg font-semibold'>SOLUTIONS</span>
         <section className='flex flex-col items-center justify-center mt-12 sm:mt-12 sm:flex-row sm:text-left'>
           <div className='flex flex-col sm:mr-8'>
-            <span className={title({ color: 'blue', class: 'text-xl lg:text-2xl' })}>10x+ Faster Modeling</span>
-            <span className='text-2xl font-light'>Automate modeling, metrics analysis, and data logging, reducing workflows from days to minutes</span>
+            <span className={title({ color: 'blue', class: 'text-xl lg:text-2xl' })}>10x+ Faster Transaction Modeling</span>
+            <span className='text-2xl font-light'>Automate modeling, metrics calculations, and data logging, reducing workflows from days to minutes</span>
             <span className='text-md mt-4'>
-              Playbook&#39;s cap table modeling delivers faster, more precise transaction structuring for VCs.
+              Playbook&#39;s cap table formulas enable fast, accurate returns and proceeds analysis for VCs.
               Import a cap table, in any format and level of complexity, and use our advanced formulas to model
-              scenarios, link financial data, and build institutional memory over time—even for deals that don't close.
+              scenarios and link financial data directly within Excel with no learning curve.
             </span>
           </div>
           <div className='flex gap-3 mt-4'>
@@ -120,12 +120,11 @@ export default function IndexPage() {
 
         <section className='flex flex-col items-center justify-center mt-12 sm:flex-row sm:text-left'>
           <div className='flex flex-col sm:mr-8'>
-            <span className={title({ color: 'blue', class: 'text-xl lg:text-2xl' })}>100% Accuracy</span>
+            <span className={title({ color: 'blue', class: 'text-xl lg:text-2xl' })}>Automated Metrics Calculations</span>
             <span className='text-2xl font-light'>Eliminate manual errors with consistent, reliable, and instant results</span>
             <span className='text-md mt-4'>
-              Playbook&#39;s metrics engine delivers powerful insights, dynamic benchmarking, and institutional memory.
-              Leverage 50+ core metrics and valuation metrics to benchmark across industries, funding stages, and peer
-              groups as well as compare against past deals to identify trends and outliers.
+              Automatically calculate 50+ operational metrics and valuation metrics by uploading financial documents across all your deals.
+              Metric benchmarks will also be calculated, enabling you to compare any company against your past deals to identify trends and outliers.
 
             </span>
           </div>
@@ -139,14 +138,14 @@ export default function IndexPage() {
             <span className={title({ color: 'blue', class: 'text-xl lg:text-2xl' })}>System of Record</span>
             <span className='text-2xl font-light'>Turn your deal data into your firm&#39;s most valuable asset</span>
             <span className='text-md mt-4'>
-              Playbook centralizes your deal data into a single, secure database, accessible firm-wide. This living database
-              can be leveraged to benchmark against new opportunities and track valuation and metric trends over time—improving deal diligence 
-              and driving better decision-making.
+              Log your deal data in a secure, centralized database accessible firm-wide. Playbook&#39;s system of record
+              enables you to benchmark against new opportunities, track valuation and metric trends over time, and improve
+              deal diligence and decision-making.
 
             </span>
           </div>
           <div className='flex flex-col gap-3 mt-4'>
-            <Image src='/app/metrics_and_benchmarking.png' alt='metrics-and-benchmarking' />
+            <Image src='/app/metrics_and_benchmarking.png' alt='metrics-and-benchmarking' width='1840px' />
           </div>
         </section>
         <a id='get-started'></a>
