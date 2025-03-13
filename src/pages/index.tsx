@@ -18,7 +18,7 @@ export default function IndexPage() {
             <span className={title({ color: 'blue' })}>Faster&nbsp;</span>
           </div>
           <div className={subtitle({ class: 'my-0' })}>
-            The all-in-one deal execution platform for Venture Capitalists
+            The all-in-one deal execution platform for investors
           </div>
           <Link
             isExternal
@@ -106,7 +106,7 @@ export default function IndexPage() {
         <section className='flex flex-col items-center justify-center mt-12 sm:mt-12 sm:flex-row sm:text-left'>
           <div className='flex flex-col sm:mr-8'>
             <span className={title({ color: 'blue', class: 'text-xl lg:text-2xl' })}>10x+ Faster Transaction Modeling</span>
-            <span className='text-2xl font-light'>Automate modeling, metrics calculations, and data logging, reducing workflows from days to minutes</span>
+            <span className='text-2xl font-light'>Automate scenario modeling reducing workflows from days to minutes</span>
             <span className='text-md mt-4'>
               Playbook&#39;s cap table formulas enable fast, accurate returns and proceeds analysis for VCs.
               Import a cap table, in any format and level of complexity, and use our advanced formulas to model
@@ -121,27 +121,25 @@ export default function IndexPage() {
         <section className='flex flex-col items-center justify-center mt-12 sm:flex-row sm:text-left'>
           <div className='flex flex-col sm:mr-8'>
             <span className={title({ color: 'blue', class: 'text-xl lg:text-2xl' })}>Automated Metrics Calculations</span>
-            <span className='text-2xl font-light'>Eliminate manual errors with consistent, reliable, and instant results</span>
+            <span className='text-2xl font-light'>Leverage operational and valuation metrics to make data-driven decisions</span>
             <span className='text-md mt-4'>
-              Automatically calculate 50+ operational metrics and valuation metrics by uploading financial documents across all your deals.
-              Metric benchmarks will also be calculated, enabling you to compare any company against your past deals to identify trends and outliers.
-
+              Automatically calculate 50+ operational metrics and valuation metrics by uploading financial documents for each of your deals.
+              Simply input a few, key metrics and we'll calculate the rest, saving you time and reducing any manual errors.
             </span>
           </div>
           <div className='flex gap-3 mt-4'>
-            <Image src='/app/audit.gif' alt='excel-plugin-audit' />
+            <Image src='/app/financials.png' alt='financials' />
           </div>
         </section>
 
         <section className='flex flex-col items-center justify-center mt-12 sm:flex-row sm:text-left sm:items-start'>
           <div className='flex flex-col sm:mr-8'>
-            <span className={title({ color: 'blue', class: 'text-xl lg:text-2xl' })}>System of Record</span>
-            <span className='text-2xl font-light'>Turn your deal data into your firm&#39;s most valuable asset</span>
+            <span className={title({ color: 'blue', class: 'text-xl lg:text-2xl' })}>Benchmarking Database</span>
+            <span className='text-2xl font-light'>Turn all of your deal data into your firm&#39;s most valuable asset</span>
             <span className='text-md mt-4'>
               Log your deal data in a secure, centralized database accessible firm-wide. Playbook&#39;s system of record
               enables you to benchmark against new opportunities, track valuation and metric trends over time, and improve
               deal diligence and decision-making.
-
             </span>
           </div>
           <div className='flex flex-col gap-3 mt-4'>
