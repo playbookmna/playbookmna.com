@@ -3,21 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/playbook_logos/playbook_logo.svg" />
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Playbook - Invest Smarter, Close Faster</title>
     <meta key="title" content="Playbook - Invest Smarter, Close Faster" property="og:title" />
     <meta content="Invest Smarter, Close Faster" property="og:description" />
     <meta content="Invest Smarter, Close Faster" name="description" />
-    <meta
-      key="viewport"
-      content="viewport-fit=cover, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-      name="viewport"
-    />
+    <meta key="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
     <link href="/favicon.ico" rel="icon" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script> -->
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+      .fullpage-iframe {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        border: none;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        z-index: 9999;
+      }
+    </style>
+    <iframe class="fullpage-iframe" src="https://playbook-page-rachit30.replit.app" frameborder="0" title="Pricing Engine" allowfullscreen></iframe>
   </body>
 </html>
