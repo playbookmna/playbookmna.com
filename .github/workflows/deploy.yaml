@@ -35,6 +35,7 @@ jobs:
           mkdir -p dist
           cp index.html dist/index.html
           cp public/playbook-logo.svg dist/playbook-logo.svg
+          cp public/contact.js dist/contact.js
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
