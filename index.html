@@ -154,6 +154,11 @@ h1 { font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size:
 .shot { top: 0; border-radius: 14px; overflow: hidden; box-shadow: 0 0 0 1px rgba(14,18,32,.07), 0 40px 100px -30px rgba(40,50,140,.32), 0 12px 30px -12px rgba(40,50,140,.12); }
 .shot-wrap::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 28%; background: linear-gradient(to bottom, rgba(255,255,255,0), #fff 92%); pointer-events: none; }
 
+
+.tool-name--logo { display: inline-flex; align-items: center; gap: 12px; }
+.tool-name--logo .xl { flex: none; }
+.works { display: flex; align-items: center; gap: 6px; margin-top: 8px; font-size: 13px; color: var(--ink-3); }
+
 /* ── Free tools ── */
 .tools { padding: clamp(96px, 14vh, 160px) var(--gutter); max-width: 1200px; margin: 0 auto; }
 .tools-head { text-align: center; margin-bottom: clamp(36px, 6vh, 56px); }
@@ -337,7 +342,8 @@ form input:focus, form textarea:focus { outline: none; border-color: var(--blue)
       </a>
       <a class="tool reveal" href="https://app.playbookmna.com/check/excel">
         <div class="tool-text">
-          <span class="tool-name">Excel add-in</span>
+          <span class="tool-name tool-name--logo"><svg class="xl" width="30" height="30" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><defs><linearGradient id="xlA" x1="4.5" y1="14" x2="22" y2="34" gradientUnits="userSpaceOnUse"><stop stop-color="#18884F"/><stop offset=".5" stop-color="#117E43"/><stop offset="1" stop-color="#0B6631"/></linearGradient></defs><path fill="#169154" d="M29 6H15.744C14.781 6 14 6.781 14 7.744v7.259h15V6z"/><path fill="#18482A" d="M14 33.054v7.202C14 41.219 14.781 42 15.743 42H29v-8.946H14z"/><path fill="#0C8045" d="M14 15.003h15v9.002H14z"/><path fill="#17472A" d="M14 24.005h15v9.05H14z"/><path fill="#29C27F" d="M42.256 6H29v9.003h15V7.744C44 6.781 43.219 6 42.256 6z"/><path fill="#27663F" d="M29 33.054V42h13.257c.962 0 1.743-.781 1.743-1.743v-7.202H29z"/><path fill="#19AC65" d="M29 15.003h15v9.002H29z"/><path fill="#129652" d="M29 24.005h15v9.05H29z"/><path fill="url(#xlA)" d="M22.319 34H5.681C4.753 34 4 33.247 4 32.319V15.681C4 14.753 4.753 14 5.681 14h16.638c.928 0 1.681.753 1.681 1.681v16.638c0 .928-.753 1.681-1.681 1.681z"/><path fill="#fff" d="M9.807 19h2.386l1.936 3.754L16.175 19h2.229l-3.071 5 3.141 5h-2.351l-2.109-3.93L11.912 29H9.526l3.193-5.018L9.807 19z"/></svg>Excel add-in</span>
+          <span class="works"><svg class="xl" width="14" height="14" viewBox="0 0 48 48" aria-hidden="true" focusable="false"><defs><linearGradient id="xlB" x1="4.5" y1="14" x2="22" y2="34" gradientUnits="userSpaceOnUse"><stop stop-color="#18884F"/><stop offset=".5" stop-color="#117E43"/><stop offset="1" stop-color="#0B6631"/></linearGradient></defs><path fill="#169154" d="M29 6H15.744C14.781 6 14 6.781 14 7.744v7.259h15V6z"/><path fill="#18482A" d="M14 33.054v7.202C14 41.219 14.781 42 15.743 42H29v-8.946H14z"/><path fill="#0C8045" d="M14 15.003h15v9.002H14z"/><path fill="#17472A" d="M14 24.005h15v9.05H14z"/><path fill="#29C27F" d="M42.256 6H29v9.003h15V7.744C44 6.781 43.219 6 42.256 6z"/><path fill="#27663F" d="M29 33.054V42h13.257c.962 0 1.743-.781 1.743-1.743v-7.202H29z"/><path fill="#19AC65" d="M29 15.003h15v9.002H29z"/><path fill="#129652" d="M29 24.005h15v9.05H29z"/><path fill="url(#xlB)" d="M22.319 34H5.681C4.753 34 4 33.247 4 32.319V15.681C4 14.753 4.753 14 5.681 14h16.638c.928 0 1.681.753 1.681 1.681v16.638c0 .928-.753 1.681-1.681 1.681z"/><path fill="#fff" d="M9.807 19h2.386l1.936 3.754L16.175 19h2.229l-3.071 5 3.141 5h-2.351l-2.109-3.93L11.912 29H9.526l3.193-5.018L9.807 19z"/></svg>Works with Microsoft Excel</span>
           <p>The same engine, inside your own spreadsheet.</p>
           <span class="tool-go">Get the add-in <span class="arr" aria-hidden="true">→</span></span>
         </div>
