@@ -147,7 +147,7 @@ h1 { font-family: 'Inter Tight', Inter, sans-serif; font-weight: 600; font-size:
 
 
 /* No frame around the product screen, and more of it. */
-.wrap-wide { max-width: 1480px; }
+.wrap-wide { max-width: 1300px; }
 .stage { background: none; border: 0; border-radius: 0; box-shadow: none; overflow: visible; }
 .stage::after { display: none; }
 .shot-wrap { padding: 0; }
@@ -426,7 +426,7 @@ document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
   const shot = document.getElementById('shot'), wrap = shot.parentElement;
   const fit = () => {
     const pad = parseFloat(getComputedStyle(wrap).paddingLeft) || 0;
-    const sc = Math.min(1.15, (wrap.clientWidth - pad * 2) / 1280);
+    const sc = Math.min(0.92, (wrap.clientWidth - pad * 2) / 1280);
     wrap.style.setProperty('--shot-s', sc.toFixed(4));
     wrap.style.setProperty('--shot-h', Math.round(Math.min(shot.offsetHeight, 720) * sc) + 'px');
   };
