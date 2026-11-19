@@ -328,10 +328,9 @@ form input:focus, form textarea:focus { outline: none; border-color: var(--blue)
     <form class="ask" id="ask" action="https://app.playbookmna.com/check" method="get" role="search">
       <span class="orb" aria-hidden="true"></span>
       <label class="sr" for="ask-q">Ask Playbook to check a model</label>
-      <input id="ask-q" name="q" type="text" autocomplete="off" maxlength="300" placeholder="Reading a cap table and its formulas…">
+      <input id="ask-q" name="q" type="text" autocomplete="off" maxlength="300" placeholder="Reading the data room for Project Halcyon…">
       <button type="submit" aria-label="Check a model with Playbook"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
     </form>
-    <p class="ask-hint">Describe a model to check, like “our fund’s MOIC on the Returns tab”. Five free checks.</p>
     <div class="actions">
       <button type="button" class="btn btn-sm btn-ghost" id="contact-open-3">Get in touch</button>
       <a class="btn btn-sm btn-primary" href="#tools">Explore free tools</a>
@@ -480,13 +479,15 @@ document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
   const input = document.getElementById('ask-q');
   if (!input || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   const thoughts = [
-    'Reading a cap table and its formulas…',
+    'Reading the data room for Project Halcyon…',
+    'Calculating 100+ SaaS metrics from a customer file…',
     'Reconciling a waterfall, cell by cell…',
+    'Exporting the returns model to Excel…',
+    'Building cohort retention for the 2024 vintage…',
+    'Drafting the IC memo from the diligence notes…',
+    'Filing yesterday’s meeting notes to the right deal…',
     'Checking 420 numbers against the model…',
-    'Tracing a fund’s returns back to the source…',
-    'Drafting an investment memo…',
-    'Connecting a deal to everyone who knows it…',
-  ];
+  ]
   const wait = (ms) => new Promise((r) => setTimeout(r, ms));
   const quiet = () => document.activeElement === input || input.value;
   let i = 0;
