@@ -1,6 +1,9 @@
 const dialog = document.getElementById('contact-dialog');
 const form = document.getElementById('contact-form');
 const feedback = document.getElementById('contact-feedback');
+const title = document.getElementById('contact-title');
+const intro = dialog.querySelector('.form-intro');
+const blank = { title: title.textContent, intro: intro.textContent };
 let submissionId;
 let startedAt;
 document.getElementById('contact-open').addEventListener('click', () => { startedAt ||= Date.now(); dialog.showModal(); });
@@ -25,7 +28,10 @@ form.addEventListener('submit', async event => {
     const result = await response.json();
     if (!response.ok || !result.received) throw new Error(result.error || 'Unable to send your message. Please try again.');
     form.hidden = true;
-    feedback.textContent = 'Thanks for reaching out. Your message has been received, and we’ll be in touch.';
+    title.textContent = 'Thanks, we’ve got it.';
+    intro.textContent = `Your message is with the Playbook team. We’ll reply to ${fields.email}.`;
+    form.reset();
+    submissionId = undefined;
   } catch (error) {
     feedback.textContent = error.name === 'AbortError' || error instanceof TypeError
       ? 'Could not confirm delivery. Your message is still here—please try again.' : error.message;
@@ -34,4 +40,12 @@ form.addEventListener('submit', async event => {
     button.disabled = false;
     button.textContent = 'Send message';
   }
+});
+// Opening it again after a send shows a fresh form.
+dialog.addEventListener('close', () => {
+  if (!form.hidden) return;
+  form.hidden = false;
+  title.textContent = blank.title;
+  intro.textContent = blank.intro;
+  feedback.textContent = '';
 });
